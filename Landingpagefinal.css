@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
+  position: fixed;
+  background: #bbdcf5; ;
+  width: 100%;
+  transition: 0.5s;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+
+}
+.navbar .container-fluid{
+  background: #bbdcf5;
+  height: 100%;
+  width: 100%;
+}
+.navbar .container-fluid .navbar-brand{
+  display: flex;
+  height:35px;
+  width: 50px;
+ 
+ }
+ .search-bar .btn{
+  background: blue;
+  outline: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  width: 40px;
+  border: none;
+  user-select: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+.search-bar .form-search{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  color: black;
+  padding: 2px 5px 5px 2px;
+}
+
+.navbar-toggler{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.offcanvas-header .btn-close{
+  color: black;
+} 
+.offcanvas{
+  background: lightblue;
+  color: black;
+  display: flex;
+}
+.offcanvas-body .btn:hover{
+  color: black;
+}
+.offcanvas-body{
+  position: relative; 
+}
+.offcanvas-body .btn{
+  color: gray;
+  font-family: sans-serif;
+  margin: 5px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border: none;
+}
+
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.categories-section {
+  padding: 0 5%;
+  
+  margin: 100px auto;
+  width: 80%;
+  position: relative;
+ 
+}
+.categories-section .owl-theme {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.categories-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.button{ 
+  margin-bottom: 50px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+  color: white;
+}
+.button:hover{
+  color: white;
+  background: rgba(0, 0, 0, 0.61);
+}
+.categories-section .item:hover {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  
+}
+.categories-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.categories-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.categories-section .item:hover .item-desc {
+  transform: none;
+  -webkit-transform: none;
+  background: rgba(0, 0, 0, 0.61);
+}
+.categories-section .item-desc p {
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.categories-section .item:hover .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.categories-section .owl-theme .custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+.row-cols-2{
+    position: relative;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+.footer-site{
+  background: #bbdcf5;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #122664;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5 ease;
+}
+.footer-col ul li a{
+  text-transform: capitalize;
+  display: block;
+  transition: all 0.3 ease;
+}

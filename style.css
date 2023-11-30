@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: #d5e6f3;
+    transition: 0.5s;
+    align-items: first baseline;
+}
+.navbar .container{
+    height: 100%;
+    width: 100%;
+    background: #bbdcf5
+}
+.nav ul li{
+    display: inline-block;
+}
+.navbar .container .navbar-brand{
+   display: flex;
+   height: 35px;
+   width: 50px;
+
+}
+.container .nav :hover{
+    color: blue;
+}
+.nav-link{
+    color: gray;
+    font-family: sans-serif;
+    margin: 5px;
+    font-weight: bold;
+}
+.search-bar .btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    color: blue;
+    padding: 4px;
+}
+.search-bar .form-search{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    color: black;
+    padding: 2px 5px 5px 2px;
+}
+.navbar-toggler{
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color:  white;
+}
+.offcanvas-header .btn-close{
+    color: black;
+} 
+.offcanvas{
+    background: lightblue;
+    color: black;
+    display: flex;
+}
+.offcanvas-body a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+} 
+.offcanvas-body a :hover{
+    color: yellow;
+}

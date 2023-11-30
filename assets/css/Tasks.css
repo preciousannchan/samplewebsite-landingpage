@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+input {
+  vertical-align: middle;
+}
+
+#dailylogs-btn {
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.active-btn {
+  color: white!important;
+  background-color: #0017eb!important;
+  border: none!important;
+}
+
+.inactive-btn {
+  color: #0017eb!important;
+  background-color: white!important;
+  border: 1px solid #0017eb!important;
+}
+

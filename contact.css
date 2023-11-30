@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
+  position: fixed;
+  background: #bbdcf5; ;
+  width: 100%;
+  transition: 0.5s;
+  align-items: center;
+}
+.navbar .wisdom{
+  background: #bbdcf5;
+  height: 100%;
+  width: 100%;
+}
+.navbar .wisdom .navbar-brand{
+  display: flex;
+  height:35px;
+  width: 50px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+.offcanvas-header .btn-close{
+  color: black;
+} 
+.offcanvas{
+  background: lightblue;
+  color: black;
+  display: flex;
+}
+.offcanvas-body .btn:hover{
+  color: black;
+}
+.offcanvas-body{
+  position: relative; 
+}
+.offcanvas-body .btn{
+  color: gray;
+  font-family: sans-serif;
+  margin: 5px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+.info{
+    margin-top: 5%;
+}
+.card-body{
+    background: #bbdcf5;
+    border: none;
+    color: black ;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    
+}
+.card-text h1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+}
+.card-text{
+    text-align: center; 
+    justify-content: center; 
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.card-body i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #122664 !important;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white ;
+    transition: all 0.5 ease;
+}
+h6{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 1%;
+}
+.social.social-links {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: #122664;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white ;
+    transition: all 0.5 ease;
+    justify-content: center;
+  }
+.social-col{
+    justify-content: center;
+    display: flex;
+}
+
+
+.form{
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438);
+  margin-top: 14%;
+  padding-left: 2%;
+  padding-right: 3%;
+  padding-bottom: 4%;
+}
+.info .col .textbox{
+  border: 1px solid black;
+  height: 150px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+.info .row .col{ 
+  margin: 1% 0;
+}
+.info .row .form-control{
+  border: 1px solid black;
+}
+.info ul{
+  list-style: none;
+  margin-left: -4%;
+}
+
+.btn-primary{
+  border-radius: 0 10 10 0;
+  color: white;
+  margin-top: 2%;
+  background: #122664 ;
+}
+h1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-top: 2%;
+}
+h2{
+    text-align: center; 
+    justify-content: center; 
+    padding-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}

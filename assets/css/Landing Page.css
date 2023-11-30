@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.category-img:hover {
+  opacity: 0.8;
+}
+
+.sub-category-name:hover {
+  color: var(--bs-gray-800);
+}
+
+.sub-category-name {
+  color: black;
+}
+.navbar{
+  position: fixed;
+  background: #bbdcf5; ;
+  width: 100%;
+  transition: 0.5s;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+
+}
+.navbar .container{
+  background: #bbdcf5;
+  height: 100%;
+  width: 100%;
+}
+.nav ul li{
+  display: inline-block;
+}
+.navbar .container .navbar-brand{
+ display: flex;
+ height:35px;
+ width: 50px;
+
+}
+.container .nav :hover{
+  color: blue;
+}
+.nav-link{
+  color: gray;
+  font-family: sans-serif;
+  margin: 5px;
+  font-weight: bold;
+}
+.search-bar .btn{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  color: blue;
+  padding: 4px;
+}
+.search-bar .form-search{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  color: black;
+  padding: 2px 5px 5px 2px;
+}
+.navbar-toggler{
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color:  white;
+}
+.offcanvas-header .btn-close{
+  color: black;
+} 
+.offcanvas{
+  background: rgb(200, 228, 238);
+  color: black;
+  display: flex;
+}
+.nav ul li{
+  display: inline-block;
+}
+.container .nav :hover{
+  color: black;
+}
+.nav-link{
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+  margin: 5px;
+  font-weight: bold;
+  border: 2px solid blue;
+  border-radius: 50px;
+  background-color: blue;
+  padding: 10px 20px;
+}
+.search-bar .btn{
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  color: blue;
+  padding: 4px;
+}
+.search-bar .form-search{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  color: black;
+  padding: 2px 5px 5px 2px;
+}
+.navbar-toggler{
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color:  white;
+}
+.offcanvas-header .btn-close{
+  color: black;
+} 
+.offcanvas{
+  background: lightblue;
+  color: black;
+  display: flex;
+}
+.offcanvas-body .btn:hover{
+  color: black;
+}
+.offcanvas-body{
+  position: relative; 
+}
+.offcanvas-body .btn{
+  color: gray;
+  font-family: sans-serif;
+  margin: 5px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border: none;
+}
